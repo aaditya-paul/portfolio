@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.architects_daughter {
+  font-family: 'Architects Daughter', cursive;
+}
+
+.island_moment {
+  font-family: 'Island Moments', cursive;
+}
+
+.fasthand {
+  font-family: 'Fasthand', cursive;
+}
+
+.large-font {
+  font-size: 50px;
+}
+
+.yellow_text {
+  color: #fbe7c6;
+}
+.green_text {
+  color: #013a20;
+}
+
+.teal_green_font {
+  color: #167d7f;
+}
+
+.blue_font {
+  color: #a0e7e5;
+}
+
+.header {
+  display: flex;
+}
+
+.header p {
+  flex: 3;
+}
+
+.header_wrapper {
+  background: #b4f8c8;
+  padding: 20px;
+}
+
+.header_content ul {
+  list-style: none;
+  position: relative;
+  display: inline-flex;
+}
+.header_content ul li {
+  margin: 20px;
+  color: #013a20;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.header_content ul li a {
+  text-decoration: none;
+  color: #013a20;
+}
+
+.my_img {
+  scale: 0.69;
+  margin-left: -50px;
+}
+
+.introduction {
+  background-color: whitesmoke;
+  display: flex;
+  margin: 50px;
+}
+
+.intro_text {
+  font-family: 'Mukta', sans-serif;
+  margin-top: 250px;
+  font-size: 25px;
+}
+
+.intro_text span {
+  font-size: 80px;
+  font-weight: 900;
+  font-size: 70px;
+  color: #167d7f;
+}
+
+.about {
+  margin: 200px;
+  font-family: 'Mukta', sans-serif;
+  font-size: 25px;
+  display: inline-flex;
+}
+
+.aboutWrapper {
+  background-color: #a0e7e5;
+  /* padding: 50px 0 0 0; */
+}
+
+.about p {
+  flex: 3;
+}
+
+.about p a {
+  text-decoration: none;
+  color: #1cba70;
+}
+
+.about span {
+  font-size: 80px;
+  font-weight: 900;
+  font-size: 70px;
+  color: #167d7f;
+}
+
+.popular-categories-grid-div {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-left: 20px;
+}
+
+.popular-categories-grid-div a {
+  color: #6d737a;
+  text-decoration: none;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.grid_item {
+  padding: 20px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: transparent;
+  background-color: transparent;
+  margin: 20px;
+  border-color: #6d737a;
+}
+
+.grid_item:hover {
+  border-color: #20b486;
+}
+
+.grid_item a {
+  color: #6d737a;
+
+  text-decoration: none;
+}
+
+.projects {
+  margin: 250px;
+  position: relative;
+}
+
+.projects p {
+  font-family: 'Mukta', sans-serif;
+  margin-top: 250px;
+  font-size: 25px;
+}
+
+.projects p span {
+  font-size: 80px;
+  font-weight: 900;
+  font-size: 70px;
+  color: #167d7f;
+}
+
+.contact_wrapper {
+  background-color: #cdd1938e;
+  padding: 50px;
+}
+
+.contact {
+  margin: 250px;
+  border-radius: 30px;
+  border-style: dashed;
+  border-color: #013a20;
+}
+
+.contact .contact-head {
+  font-family: 'Mukta', sans-serif;
+  font-size: 25px;
+  padding: 20px 20px 0 20px;
+}
+
+.contact .contact-head span {
+  font-size: 80px;
+  font-weight: 900;
+  font-size: 70px;
+  color: #167d7f;
+}
+
+.coming_soon {
+  scale: 0.3;
+  position: absolute;
+  top: 20px;
+  left: -50px;
+}
+
+.form {
+  margin: 20px;
+}
+
+.title {
+  font-family: 'Mukta', sans-serif;
+  font-size: 35px;
+  color: #013a20;
+}
+
+.form-input {
+  padding: 20px;
+  width: 100%;
+  border-style: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.form-input {
+  padding: 20px;
+  width: 100%;
+  border-style: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.form-input-msg {
+  padding: 10px;
+
+  width: 100%;
+  border-style: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.message {
+  width: 100%;
+  height: 100px;
+  min-height: 100px;
+  text-align: left;
+  resize: vertical;
+  border-radius: 0;
+  overflow: auto;
+}
+
+.button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-style: none;
+  background-color: black;
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.footer {
+  margin: 250px;
+  position: relative;
+
+  text-align: center;
+  font-weight: 900;
+}
+.footer a {
+  text-decoration: none;
+}
+
+.contact-vectors {
+  margin: 10px;
+}
+.copyright {
+  font-weight: 300;
+  font-family: 'Mukta', sans-serif;
+}
