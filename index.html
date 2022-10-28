@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
+
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <title>Aamastra</title>
   </head>
@@ -12,7 +14,12 @@
     <!-- header -->
     <div class="header_wrapper">
       <div class="header">
-        <p class="island_moment forest_green_text large-font">Aamastra</p>
+        <p
+          class="island_moment forest_green_text large-font"
+          style="font-weight: 900"
+        >
+          Aamastra
+        </p>
         <div class="header_content">
           <ul>
             <li>
@@ -39,9 +46,15 @@
 
     <!-- intro -->
 
-    <div class="introduction" id="about">
-      <img src="assets/me4.png" alt="Aaditya" class="my_img" />
-      <p class="intro_text">
+    <div class="introduction" data-aos="fade-in">
+      <img
+        src="assets/me4.png"
+        alt="Aaditya"
+        class="my_img"
+        data-aos="fade-up"
+        data-aos-delay="350"
+      />
+      <p class="intro_text" data-aos="fade-down" data-aos-delay="350">
         <span>Hi there ! 👋🏽</span><br />
         I am Aaditya, a web and app developer based in India. I love to solve
         problems with code.
@@ -49,15 +62,15 @@
     </div>
 
     <!-- about -->
-    <div class="aboutWrapper">
+    <div class="aboutWrapper" id="about">
       <div class="about">
-        <div>
+        <div data-aos="fade-up-right" data-aos-delay="150">
           <p>
-            <span> What I do </span><br />
+            <span> Things I do </span><br />
             <b>Problems are possibilities—</b> I believe that new problems bring
             new opportunities. I love to explore new technologies and get stuck
-            with them. And when I find a solution, I think about it. I am
-            currently working as a front-end developer at
+            with them. And when I find a solution, I think, write, plan and then
+            code about it it. I am currently working as a front-end developer at
             <a href="https://www.fiverr.com/share/poovoG" target="_blank"
               >fiverr</a
             >
@@ -65,7 +78,11 @@
           </p>
         </div>
 
-        <div class="popular-categories-div">
+        <div
+          class="popular-categories-div"
+          data-aos="flip-right"
+          data-aos-delay="350"
+        >
           <div class="popular-categories-grid-div">
             <!-- item -->
             <a>
@@ -107,17 +124,25 @@
       </div>
     </div>
     <!-- projects -->
-    <div class="projects" id="projects">
-      <p>
-        <span> Recent Projects </span>
-        <br />
+    <div class="projects-wrapper" id="projects">
+      <div class="projects">
+        <p data-aos="flip-down" data-aos-delay="150">
+          <span> Recent Projects </span>
+          <br />
 
-        Coming soon....
-      </p>
+          Coming soon....
+        </p>
+      </div>
     </div>
     <!-- conatct -->
-    <div class="contact_wrapper">
-      <div class="contact" id="contact">
+    <div class="contact_wrapper" id="contact-anchor">
+      <div
+        class="contact"
+        id="contact"
+        data-aos="fade-right"
+        data-aos-anchor="#contact-anchor"
+        data-aos-offset="500"
+      >
         <p class="contact-head">
           <span>Get In Touch</span>
         </p>
@@ -158,7 +183,7 @@
       </div>
     </div>
 
-    <div class="footer">
+    <div class="footer" data-aos="zoom-in-up">
       <p class="island_moment forest_green_text large-font">Aamastra</p>
 
       <div class="contact-vector-div">
@@ -181,5 +206,12 @@
       </div>
       <p class="copyright">Copyright © Aaditya Paul 2022.</p>
     </div>
+
+    <!-- scripts -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

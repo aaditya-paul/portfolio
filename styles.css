@@ -79,7 +79,7 @@ html {
 }
 
 .my_img {
-  scale: 0.69;
+  /* scale: 0.69; */
   margin-left: -50px;
 }
 
@@ -98,12 +98,12 @@ html {
 .intro_text span {
   font-size: 80px;
   font-weight: 900;
-  font-size: 70px;
+
   color: #167d7f;
 }
 
 .about {
-  margin: 200px;
+  margin: 100px;
   font-family: 'Mukta', sans-serif;
   font-size: 25px;
   display: inline-flex;
@@ -111,12 +111,11 @@ html {
 
 .aboutWrapper {
   background-color: #a0e7e5;
-  /* padding: 50px 0 0 0; */
 }
 
-.about p {
+/* .about p {
   flex: 3;
-}
+} */
 
 .about p a {
   text-decoration: none;
@@ -126,7 +125,7 @@ html {
 .about span {
   font-size: 80px;
   font-weight: 900;
-  font-size: 70px;
+
   color: #167d7f;
 }
 
@@ -152,10 +151,12 @@ html {
   background-color: transparent;
   margin: 20px;
   border-color: #6d737a;
+  color: black;
 }
 
 .grid_item:hover {
   border-color: #20b486;
+  color: #20b486;
 }
 
 .grid_item a {
@@ -178,7 +179,7 @@ html {
 .projects p span {
   font-size: 80px;
   font-weight: 900;
-  font-size: 70px;
+
   color: #167d7f;
 }
 
@@ -203,7 +204,7 @@ html {
 .contact .contact-head span {
   font-size: 80px;
   font-weight: 900;
-  font-size: 70px;
+
   color: #167d7f;
 }
 
@@ -291,4 +292,670 @@ html {
 .copyright {
   font-weight: 300;
   font-family: 'Mukta', sans-serif;
+}
+
+.projects-wrapper {
+  background-color: whitesmoke;
+  padding: 50px;
+}
+
+/* responsivness for phone settings ! */
+
+@media screen and (min-width: 100px) {
+  .about {
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    justify-content: space-evenly;
+  }
+
+  .my_img {
+    scale: 0.69;
+    margin-left: -150px;
+  }
+
+  .about span {
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  .introduction {
+    background-color: whitesmoke;
+    display: flex;
+    margin: 50px;
+  }
+
+  .intro_text {
+    font-family: 'Mukta', sans-serif;
+    margin-top: 250px;
+    font-size: 18px;
+    margin-left: -150px;
+  }
+
+  .intro_text span {
+    font-size: 50px;
+    font-weight: 900;
+    color: #167d7f;
+  }
+
+  .projects {
+    margin: 150px;
+    position: relative;
+  }
+
+  .projects p {
+    font-family: 'Mukta', sans-serif;
+    margin-top: 150px;
+    font-size: 18px;
+  }
+
+  .projects p span {
+    font-size: 50px;
+    font-weight: 900;
+
+    color: #167d7f;
+  }
+
+  .contact_wrapper {
+    background-color: #cdd1938e;
+    padding: 50px;
+  }
+
+  .contact {
+    margin: 0px;
+    border-radius: 1 0px;
+    border-style: dashed;
+    border-color: #013a20;
+  }
+
+  .contact .contact-head {
+    font-family: 'Mukta', sans-serif;
+    font-size: 5px;
+    padding: 20px 20px 0 20px;
+  }
+
+  .contact .contact-head span {
+    font-size: 50px;
+    font-weight: 900;
+
+    color: #167d7f;
+  }
+
+  .footer {
+    margin: 250px;
+    position: relative;
+
+    text-align: center;
+    font-weight: 900;
+  }
+  .footer a {
+    text-decoration: none;
+  }
+
+  .popular-categories-grid-div {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .popular-categories-grid-div a {
+    color: #6d737a;
+    text-decoration: none;
+    font-family: 'Public Sans', sans-serif;
+  }
+
+  .grid_item {
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+
+    background-color: transparent;
+    margin: 2 0px;
+
+    border-color: #6d737a;
+    color: black;
+  }
+
+  .grid_item:hover {
+    border-color: #20b486;
+    color: #20b486;
+  }
+
+  .grid_item a {
+    color: #6d737a;
+
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .about {
+    margin: 100px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    display: inline-flex;
+    flex-direction: row;
+  }
+  .my_img {
+    scale: 1;
+    margin-left: -100px;
+  }
+
+  .about span {
+    font-size: 60px;
+    font-weight: 900;
+  }
+
+  .introduction {
+    background-color: whitesmoke;
+    display: flex;
+    margin: 50px;
+  }
+
+  .intro_text {
+    font-family: 'Mukta', sans-serif;
+    margin-top: 250px;
+    font-size: 18px;
+    margin-left: -50px;
+  }
+
+  .intro_text span {
+    font-size: 50px;
+    font-weight: 900;
+    color: #167d7f;
+  }
+
+  .projects {
+    margin: 150px;
+    position: relative;
+  }
+
+  .projects p {
+    font-family: 'Mukta', sans-serif;
+    margin-top: 150px;
+    font-size: 18px;
+  }
+
+  .projects p span {
+    font-size: 50px;
+    font-weight: 900;
+
+    color: #167d7f;
+  }
+
+  .contact_wrapper {
+    background-color: #cdd1938e;
+    padding: 50px;
+  }
+
+  .contact {
+    margin: 150px;
+    border-radius: 30px;
+    border-style: dashed;
+    border-color: #013a20;
+  }
+
+  .contact .contact-head {
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    padding: 20px 20px 0 20px;
+  }
+
+  .contact .contact-head span {
+    font-size: 50px;
+    font-weight: 900;
+
+    color: #167d7f;
+  }
+
+  .footer {
+    margin: 0px;
+    position: relative;
+
+    text-align: center;
+    font-weight: 900;
+  }
+  .footer a {
+    text-decoration: none;
+  }
+
+  .popular-categories-grid-div {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 20px;
+  }
+
+  .popular-categories-grid-div a {
+    color: #6d737a;
+    text-decoration: none;
+    font-family: 'Public Sans', sans-serif;
+  }
+
+  .grid_item {
+    padding: 20px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    background-color: transparent;
+    margin: 20px;
+    border-color: #6d737a;
+    color: black;
+  }
+
+  .grid_item:hover {
+    border-color: #20b486;
+    color: #20b486;
+  }
+
+  .grid_item a {
+    color: #6d737a;
+
+    text-decoration: none;
+  }
+}
+
+/* responsivness for tab settings ! */
+
+@media screen and (min-width: 1200px) {
+  .popular-categories-grid-div {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 20px;
+    flex-direction: row;
+  }
+
+  .popular-categories-grid-div a {
+    color: #6d737a;
+    text-decoration: none;
+    font-family: 'Public Sans', sans-serif;
+  }
+
+  .grid_item {
+    padding: 20px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    background-color: transparent;
+    margin: 20px;
+    border-color: #6d737a;
+    color: black;
+  }
+
+  .grid_item:hover {
+    border-color: #20b486;
+    color: #20b486;
+  }
+
+  .grid_item a {
+    color: #6d737a;
+
+    text-decoration: none;
+  }
+  .about {
+    margin: 200px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    display: inline-flex;
+  }
+  .my_img {
+    scale: 1;
+    margin-left: -50px;
+  }
+
+  .about span {
+    font-size: 60px;
+    font-weight: 900;
+  }
+
+  .introduction {
+    background-color: whitesmoke;
+    display: flex;
+    margin: 50px;
+  }
+
+  .intro_text {
+    font-family: 'Mukta', sans-serif;
+    margin-top: 250px;
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .intro_text span {
+    font-size: 60px;
+    font-weight: 900;
+    color: #167d7f;
+  }
+
+  .projects {
+    margin: 250px;
+    position: relative;
+  }
+
+  .projects p {
+    font-family: 'Mukta', sans-serif;
+    margin-top: 250px;
+    font-size: 18px;
+  }
+
+  .projects p span {
+    font-size: 60px;
+    font-weight: 900;
+
+    color: #167d7f;
+  }
+
+  .contact_wrapper {
+    background-color: #cdd1938e;
+    padding: 50px;
+  }
+
+  .contact {
+    margin: 250px;
+    border-radius: 30px;
+    border-style: dashed;
+    border-color: #013a20;
+  }
+
+  .contact .contact-head {
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    padding: 20px 20px 0 20px;
+  }
+
+  .contact .contact-head span {
+    font-size: 60px;
+    font-weight: 900;
+
+    color: #167d7f;
+  }
+
+  .footer {
+    margin: 250px;
+    position: relative;
+
+    text-align: center;
+    font-weight: 900;
+  }
+  .footer a {
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1425px) {
+  .popular-categories-grid-div {
+    margin-top: 30px;
+    display: grid;
+    flex-direction: row;
+
+    grid-template-columns: auto auto auto;
+    margin-left: 20px;
+  }
+
+  .popular-categories-grid-div a {
+    color: #6d737a;
+    text-decoration: none;
+    font-family: 'Public Sans', sans-serif;
+  }
+
+  .grid_item {
+    padding: 20px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    background-color: transparent;
+    margin: 20px;
+    border-color: #6d737a;
+    color: black;
+  }
+
+  .grid_item:hover {
+    border-color: #20b486;
+    color: #20b486;
+  }
+
+  .grid_item a {
+    color: #6d737a;
+
+    text-decoration: none;
+  }
+  .about {
+    margin: 200px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    display: inline-flex;
+  }
+  .my_img {
+    scale: 1;
+    margin-left: -50px;
+  }
+  .about span {
+    font-size: 70px;
+  }
+  .introduction {
+    background-color: whitesmoke;
+    display: flex;
+    margin: 50px;
+  }
+
+  .intro_text {
+    font-family: 'Mukta', sans-serif;
+    margin-top: 250px;
+    font-size: 20px;
+    margin-left: 0;
+  }
+
+  .intro_text span {
+    font-size: 70px;
+    font-weight: 900;
+    color: #167d7f;
+  }
+
+  .projects {
+    margin: 250px;
+    position: relative;
+  }
+
+  .projects p {
+    font-family: 'Mukta', sans-serif;
+    margin-top: 250px;
+    font-size: 20px;
+  }
+
+  .projects p span {
+    font-size: 70px;
+    font-weight: 900;
+
+    color: #167d7f;
+  }
+
+  .contact_wrapper {
+    background-color: #cdd1938e;
+    padding: 50px;
+  }
+
+  .contact {
+    margin: 250px;
+    border-radius: 30px;
+    border-style: dashed;
+    border-color: #013a20;
+  }
+
+  .contact .contact-head {
+    font-family: 'Mukta', sans-serif;
+    font-size: 20px;
+    padding: 20px 20px 0 20px;
+  }
+
+  .contact .contact-head span {
+    font-size: 70px;
+    font-weight: 900;
+
+    color: #167d7f;
+  }
+
+  .footer {
+    margin: 250px;
+    position: relative;
+
+    text-align: center;
+    font-weight: 900;
+  }
+  .footer a {
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  .popular-categories-grid-div {
+    margin-top: 30px;
+    flex-direction: row;
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 20px;
+  }
+
+  .popular-categories-grid-div a {
+    color: #6d737a;
+    text-decoration: none;
+    font-family: 'Public Sans', sans-serif;
+  }
+
+  .grid_item {
+    padding: 20px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    background-color: transparent;
+    margin: 20px;
+    border-color: #6d737a;
+    color: black;
+  }
+
+  .grid_item:hover {
+    border-color: #20b486;
+    color: #20b486;
+  }
+
+  .grid_item a {
+    color: #6d737a;
+
+    text-decoration: none;
+  }
+
+  .about {
+    margin: 200px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 25px;
+    display: inline-flex;
+    /* height: 100vh; */
+  }
+  .my_img {
+    scale: 1;
+    margin-left: -50px;
+  }
+  .aboutWrapper {
+    background-color: #a0e7e5;
+
+    /* padding: 50px 0 0 0; */
+  }
+
+  .about p {
+    flex: 3;
+  }
+
+  .about p a {
+    text-decoration: none;
+    color: #1cba70;
+  }
+
+  .about span {
+    font-size: 80px;
+    font-weight: 900;
+
+    color: #167d7f;
+  }
+
+  .introduction {
+    background-color: whitesmoke;
+    display: flex;
+    margin: 50px;
+  }
+
+  .intro_text {
+    font-family: 'Mukta', sans-serif;
+    margin-top: 250px;
+    font-size: 25px;
+    margin-left: 0;
+  }
+
+  .intro_text span {
+    font-size: 80px;
+    font-weight: 900;
+    color: #167d7f;
+  }
+
+  .projects {
+    margin: 250px;
+    position: relative;
+  }
+
+  .projects p {
+    font-family: 'Mukta', sans-serif;
+    margin-top: 250px;
+    font-size: 25px;
+  }
+
+  .projects p span {
+    font-size: 80px;
+    font-weight: 900;
+
+    color: #167d7f;
+  }
+
+  .contact_wrapper {
+    background-color: #cdd1938e;
+    padding: 50px;
+  }
+
+  .contact {
+    margin: 250px;
+    border-radius: 30px;
+    border-style: dashed;
+    border-color: #013a20;
+  }
+
+  .contact .contact-head {
+    font-family: 'Mukta', sans-serif;
+    font-size: 25px;
+    padding: 20px 20px 0 20px;
+  }
+
+  .contact .contact-head span {
+    font-size: 80px;
+    font-weight: 900;
+
+    color: #167d7f;
+  }
+
+  .footer {
+    margin: 250px;
+    position: relative;
+
+    text-align: center;
+    font-weight: 900;
+  }
+  .footer a {
+    text-decoration: none;
+  }
 }
